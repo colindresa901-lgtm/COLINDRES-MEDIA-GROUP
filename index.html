@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09090b">
+  <meta name="description" content="COLINDRES MEDIA GROUP: agencia independiente para streamers y creadores digitales. Estrategia, comunidad, marca y desarrollo profesional.">
+  <title>COLINDRES MEDIA GROUP — We Create Digital Stars</title>
+  <style>
+    :root{--bg:#09090b;--panel:#111115;--panel2:#17171d;--orange:#ff7826;--orange2:#ff9a55;--white:#f7f7f8;--muted:#a6a6b0;--line:rgba(255,255,255,.1);--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6;overflow-x:hidden}
+    a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .announcement{background:linear-gradient(90deg,#ff7826,#ff9a55);color:#17100b;text-align:center;padding:8px 15px;font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+    header{position:sticky;top:0;z-index:50;background:rgba(9,9,11,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+    .nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.06em}.brand-mark{width:39px;height:39px;border:2px solid var(--orange);border-radius:12px;display:grid;place-items:center;color:var(--orange);font-size:22px;font-weight:950;transform:rotate(-7deg)}.brand-name{font-size:16px}.brand-name span{color:var(--orange)}
+    .navlinks{display:flex;gap:27px;align-items:center;color:#d4d4da;font-size:13px}.navlinks a:hover{color:var(--orange)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:12px 19px;font-weight:800;font-size:13px;transition:.25s;border:1px solid transparent}.nav-cta,.btn-primary{background:var(--orange);color:#160e09}.nav-cta:hover,.btn-primary:hover{background:#ff9657;transform:translateY(-2px);box-shadow:0 10px 30px #ff782633}.btn-secondary{border-color:var(--line);background:#ffffff08;color:white}.btn-secondary:hover{border-color:var(--orange);color:var(--orange)}
+    .menu{display:none;background:none;color:white;border:0;font-size:25px}
+    .hero{position:relative;min-height:680px;display:flex;align-items:center;isolation:isolate;overflow:hidden}.hero:before{content:"";position:absolute;width:650px;height:650px;border-radius:50%;right:-110px;top:20px;background:radial-gradient(circle,#ff782625 0,transparent 67%);z-index:-1}.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:55px;align-items:center;padding:90px 0}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--orange);font-size:11px;font-weight:900;letter-spacing:.19em;text-transform:uppercase}.eyebrow:before{content:"";width:24px;height:1px;background:var(--orange)}h1{font-size:clamp(48px,7vw,88px);line-height:.99;letter-spacing:-.065em;margin:23px 0 22px;font-weight:950}h1 span,.accent{color:var(--orange)}.hero-copy{font-size:17px;color:#b8b8c1;max-width:570px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.hero-note{margin-top:27px;color:#85858f;font-size:12px}.hero-art{position:relative;min-height:430px;display:grid;place-items:center}.orbit{position:absolute;width:390px;height:390px;border:1px solid #ff78264a;border-radius:50%;animation:spin 30s linear infinite}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #ff782626;border-radius:50%;inset:35px}.orbit:after{inset:75px}.core{width:260px;height:260px;border-radius:42px;background:linear-gradient(145deg,#1d1d24,#0d0d11);border:1px solid #ff78266b;box-shadow:0 0 100px #ff782626,inset 0 0 45px #ff78260d;display:grid;place-items:center;transform:rotate(-8deg);animation:float 5s ease-in-out infinite}.core-logo{font-size:125px;font-weight:1000;letter-spacing:-.14em;color:var(--orange);text-shadow:0 0 35px #ff78265c}.float-tag{position:absolute;background:#17171d;border:1px solid var(--line);border-radius:14px;padding:12px 15px;font-size:11px;font-weight:800;letter-spacing:.08em;box-shadow:0 15px 45px #0008}.tag-one{top:60px;right:0}.tag-two{bottom:60px;left:0}.tag-three{bottom:5px;right:35px;color:var(--orange)}
+    .stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#0d0d10}.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:27px 0}.stat{text-align:center;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;font-size:13px;letter-spacing:.1em}.stat span{font-size:11px;color:var(--muted)}
+    section{padding:105px 0}.section-head{max-width:680px;margin-bottom:45px}.section-head h2{font-size:clamp(34px,5vw,54px);line-height:1.05;letter-spacing:-.05em;margin:15px 0}.section-head p{color:var(--muted);font-size:15px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:linear-gradient(145deg,#17171d,#101014);border:1px solid var(--line);border-radius:20px;padding:28px;min-height:225px;transition:.3s}.card:hover{transform:translateY(-6px);border-color:#ff78266b}.card-icon{width:43px;height:43px;border-radius:13px;background:#ff78261a;color:var(--orange);display:grid;place-items:center;font-size:20px;margin-bottom:25px}.card h3{margin:0 0 9px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:13px}
+    .about{background:#0e0e12;border-block:1px solid var(--line)}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:center}.manifesto{border-left:3px solid var(--orange);padding:20px 0 20px 25px;font-size:clamp(25px,3vw,38px);font-weight:850;line-height:1.2;letter-spacing:-.04em}.about-text p{color:var(--muted);font-size:14px}.pill-row{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.pill{border:1px solid var(--line);border-radius:999px;padding:7px 12px;color:#d7d7dc;font-size:11px}
+    .ad-slot{margin:0 auto;width:min(970px,calc(100% - 40px));border:1px dashed #5a493e;background:linear-gradient(90deg,#15110f,#141418);border-radius:15px;padding:18px;text-align:center;color:#a9a0a0;font-size:11px;letter-spacing:.1em;text-transform:uppercase}.ad-slot b{color:var(--orange);display:block;font-size:10px;margin-bottom:3px}.ad-slot small{display:block;color:#777;font-size:10px;letter-spacing:0;text-transform:none;margin-top:4px}
+    .join{background:radial-gradient(ellipse at 80% 30%,#ff782615,transparent 45%)}.join-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:start}.join-copy h2{font-size:clamp(38px,5vw,58px);line-height:1.02;letter-spacing:-.06em;margin:16px 0}.join-copy p{color:var(--muted);font-size:14px}.join-points{padding:0;list-style:none;margin:25px 0}.join-points li{margin:12px 0;color:#d6d6dc;font-size:13px}.join-points li:before{content:"✦";color:var(--orange);margin-right:10px}
+    form{background:#141419;border:1px solid var(--line);padding:28px;border-radius:22px;box-shadow:0 25px 70px #0005}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}label{font-size:11px;font-weight:800;color:#ddd;letter-spacing:.04em}input,textarea,select{width:100%;background:#0b0b0e;border:1px solid #303038;border-radius:10px;padding:13px 14px;color:white;outline:none;font-size:13px}input:focus,textarea:focus,select:focus{border-color:var(--orange)}textarea{min-height:105px;resize:vertical}select option{background:#111}.form-foot{font-size:10px;color:#8c8c96;margin:15px 0}.form-submit{width:100%;border:0;cursor:pointer;margin-top:5px}.form-message{font-size:12px;color:var(--orange);margin-top:12px;display:none}
+    .contact{padding-top:20px}.contact-box{background:linear-gradient(110deg,#1b1511,#131318);border:1px solid #ff78263d;border-radius:22px;padding:35px;display:flex;justify-content:space-between;align-items:center;gap:25px}.contact-box h2{font-size:27px;letter-spacing:-.04em;margin:0 0 6px}.contact-box p{margin:0;color:var(--muted);font-size:13px}.contact-actions{display:flex;gap:10px;flex-wrap:wrap}
+    footer{border-top:1px solid var(--line);padding:30px 0 38px;color:#81818b;font-size:11px}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-links{display:flex;gap:18px}.footer-links a:hover{color:var(--orange)}.legal{margin-top:17px;max-width:800px;color:#62626c;font-size:10px}
+    .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}@keyframes spin{to{transform:rotate(360deg)}}@keyframes float{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-13px) rotate(-5deg)}}
+    @media(max-width:850px){.navlinks{display:none;position:absolute;top:78px;left:0;right:0;background:#101014;padding:22px 25px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}.nav-cta{display:none}.hero-grid,.about-grid,.join-grid{grid-template-columns:1fr}.hero{min-height:auto}.hero-grid{padding:75px 0 55px;gap:10px}.hero-art{min-height:360px}.orbit{width:310px;height:310px}.core{width:210px;height:210px}.core-logo{font-size:100px}.cards{grid-template-columns:1fr 1fr}.about-grid,.join-grid{gap:35px}section{padding:75px 0}}
+    @media(max-width:560px){.container{width:min(var(--max),calc(100% - 30px))}.announcement{font-size:9px}.brand-name{font-size:14px}.hero-grid{padding-top:60px}h1{font-size:52px}.hero-copy{font-size:15px}.hero-art{min-height:315px}.orbit{width:275px;height:275px}.core{width:185px;height:185px}.core-logo{font-size:88px}.tag-one{right:-3px;top:28px}.tag-two{left:-2px;bottom:42px}.tag-three{right:4px}.stats-grid{grid-template-columns:1fr;gap:17px}.stat{border:0;border-bottom:1px solid var(--line);padding-bottom:13px}.stat:last-child{border:0;padding:0}.cards{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}form{padding:20px}.contact-box,.footer-row{flex-direction:column;align-items:flex-start}.contact-box{padding:25px}.footer-links{flex-wrap:wrap}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+    /* COLINDRES MEDIA GROUP 2.0 — experiencia ampliada */
+    .ticker{overflow:hidden;border-block:1px solid #ff782633;background:#100e0d;padding:13px 0;color:#ffc39f;font-size:11px;font-weight:900;letter-spacing:.16em;white-space:nowrap}
+    .ticker-track{display:inline-block;min-width:200%;animation:ticker 28s linear infinite}
+    .ticker-track span{margin:0 34px}
+    @keyframes ticker{to{transform:translateX(-50%)}}
+    .premium-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+    .premium-card{position:relative;overflow:hidden;background:linear-gradient(145deg,#1a1716,#101014);border:1px solid #ff782633;border-radius:20px;padding:26px;min-height:210px}
+    .premium-card:after{content:"";position:absolute;width:160px;height:160px;right:-70px;top:-80px;border-radius:50%;background:#ff78261c;filter:blur(10px)}
+    .premium-card h3{margin:10px 0 7px}.premium-card p{color:var(--muted);font-size:13px;margin:0}
+    .money{font-size:42px;line-height:1;font-weight:950;color:var(--orange);letter-spacing:-.06em;margin:17px 0 8px}
+    .money small{font-size:13px;color:#c8c8cf;letter-spacing:0}
+    .notice{border:1px solid #ff78264d;background:#ff782610;border-radius:14px;padding:16px 18px;color:#d8d2ce;font-size:12px;margin-top:20px}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;counter-reset:step}
+    .step{background:#141419;border:1px solid var(--line);border-radius:16px;padding:20px;counter-increment:step}
+    .step:before{content:"0" counter(step);display:block;color:var(--orange);font-size:24px;font-weight:950;margin-bottom:13px}
+    .step h3{font-size:15px;margin:0 0 7px}.step p{font-size:12px;color:var(--muted);margin:0}
+    .share-panel{display:grid;grid-template-columns:1fr auto;align-items:center;gap:25px;padding:28px;border:1px solid #ff78264d;border-radius:20px;background:linear-gradient(110deg,#20150f,#121216)}
+    .share-panel p{font-size:13px;color:var(--muted);margin:7px 0 0}.share-actions{display:flex;gap:10px;flex-wrap:wrap}
+    .president{display:flex;gap:20px;align-items:center;background:#131318;border:1px solid var(--line);padding:24px;border-radius:18px;margin-top:22px}
+    .president-mark{width:58px;height:58px;flex:0 0 58px;border-radius:18px;display:grid;place-items:center;background:#ff78261b;color:var(--orange);font-weight:950;font-size:24px}
+    .president small{color:var(--orange);font-weight:900;letter-spacing:.13em}.president strong{display:block;font-size:18px}
+    .help-fab{position:fixed;right:22px;bottom:22px;z-index:80;border:0;border-radius:999px;background:var(--orange);color:#160e09;padding:14px 20px;font-weight:950;box-shadow:0 12px 40px #0009;cursor:pointer}
+    .help-box{position:fixed;right:22px;bottom:85px;width:min(390px,calc(100vw - 30px));height:480px;max-height:70vh;z-index:81;background:#121216;border:1px solid #ff78266b;border-radius:20px;box-shadow:0 25px 80px #000b;display:none;overflow:hidden}
+    .help-box.open{display:flex;flex-direction:column;animation:pop .2s ease}
+    @keyframes pop{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+    .help-head{padding:17px;background:#20150f;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+    .help-head strong{font-size:14px}.help-head small{display:block;color:#b7a79e;font-size:10px}
+    .help-close{background:none;border:0;color:white;font-size:23px;cursor:pointer}
+    .help-log{padding:15px;overflow:auto;flex:1;display:flex;flex-direction:column;gap:10px}
+    .bubble{max-width:90%;padding:11px 13px;border-radius:13px;font-size:12px;white-space:pre-wrap}
+    .bubble.bot{background:#24242b;color:#eee;align-self:flex-start}.bubble.user{background:#ff7826;color:#180e08;align-self:flex-end}
+    .help-form{padding:12px;border-top:1px solid var(--line);display:flex;gap:8px}
+    .help-form input{min-width:0}.help-form button{border:0;border-radius:10px;background:var(--orange);font-weight:900;padding:0 15px;cursor:pointer}
+    .share-preview{background:#0b0b0e;border:1px solid #333;border-radius:12px;padding:18px;margin:15px 0;color:#e9e9ed;font-size:13px;white-space:pre-wrap}
+    .modal{position:fixed;inset:0;background:#000b;z-index:90;display:none;place-items:center;padding:20px}.modal.open{display:grid}
+    .modal-card{width:min(560px,100%);background:#15151a;border:1px solid #ff78265c;border-radius:20px;padding:25px}
+    .modal-card h3{margin-top:0}.modal-card .share-preview{max-height:260px;overflow:auto}
+    .faq-links{display:flex;flex-wrap:wrap;gap:7px;padding:0 15px 12px}.faq-links button{background:#24242b;border:1px solid var(--line);border-radius:999px;color:#eee;padding:7px 10px;font-size:10px;cursor:pointer}
+    @media(max-width:850px){.premium-grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.share-panel{grid-template-columns:1fr}.navlinks{max-height:75vh;overflow:auto}}
+    @media(max-width:560px){.premium-grid,.steps{grid-template-columns:1fr}.president{align-items:flex-start}.help-fab{right:14px;bottom:14px}.help-box{right:14px;bottom:76px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+
+    .ad-slot{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;border-style:solid;padding:22px}
+    .ad-slot b{display:none}
+    .ad-slot small{width:100%;font-size:11px}
+    .ad-cta{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 18px;border-radius:10px;background:#ff7826;color:#170e08;font-weight:900;font-size:12px;letter-spacing:.01em;text-transform:none;transition:transform .2s,box-shadow .2s}
+    .ad-cta.secondary{background:#242127;color:#fff;border:1px solid #ff78265c}
+    .ad-cta:hover{transform:translateY(-2px);box-shadow:0 8px 28px #ff782633}
+
+  </style>
+</head>
+<body>
+  <div class="announcement">Latinoamérica · España &nbsp;|&nbsp; Nuevas oportunidades para creadores</div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="COLINDRES MEDIA GROUP inicio"><span class="brand-mark">C</span><span class="brand-name">COLINDRES <span>MEDIA GROUP</span></span></a>
+      <nav class="navlinks" id="navlinks"><a href="#inicio">Inicio</a><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#talentos">Talentos</a><a href="#incentivos">Incentivos</a><a href="#guia">Guía</a><a href="#promociona">Comparte</a><a href="#contacto">Contacto</a></nav>
+      <a class="nav-cta" href="#unete">Únete al grupo ↗</a>
+      <button class="menu" id="menu" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <div class="eyebrow">Independent creator management</div>
+          <h1>Tu talento.<br><span>El siguiente</span><br>nivel.</h1>
+          <p class="hero-copy">Impulsamos a streamers y creadores digitales para convertir su pasión en una marca con futuro. Estrategia, visibilidad y oportunidades para crecer.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#unete">Quiero formar parte <span>↗</span></a><a class="btn btn-secondary" href="#servicios">Descubre COLINDRES MEDIA GROUP</a></div>
+          <div class="hero-note">WE CREATE DIGITAL STARS. &nbsp;·&nbsp; LATAM + ESPAÑA</div>
+        </div>
+        <div class="hero-art reveal" aria-label="Símbolo COLINDRES MEDIA GROUP">
+          <div class="orbit"></div><div class="core"><div class="core-logo">N</div></div>
+          <div class="float-tag tag-one">CREATOR FIRST ✦</div><div class="float-tag tag-two">TALENT · STRATEGY · GROWTH</div><div class="float-tag tag-three">NEXT IS NOW / 01</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="stats"><div class="container stats-grid"><div class="stat"><strong>CREATOR FIRST</strong><span>Las personas antes que los números</span></div><div class="stat"><strong>LATAM + ESPAÑA</strong><span>Una comunidad sin fronteras</span></div><div class="stat"><strong>BUILT TO GROW</strong><span>Desarrollo con visión a largo plazo</span></div></div></div>
+
+
+    <div class="ticker" aria-label="COLINDRES MEDIA GROUP — crecimiento, estrategia y comunidad">
+      <div class="ticker-track"><span>✦ CREATOR DEVELOPMENT</span><span>✦ STREAMER SUPPORT</span><span>✦ BRAND IDENTITY</span><span>✦ COMMUNITY FIRST</span><span>✦ COLINDRES MEDIA GROUP</span><span>✦ CREATOR DEVELOPMENT</span><span>✦ STREAMER SUPPORT</span><span>✦ BRAND IDENTITY</span><span>✦ COMMUNITY FIRST</span><span>✦ COLINDRES MEDIA GROUP</span></div>
+    </div>
+
+    <div class="ad-slot" aria-label="Espacio para anuncios y colaboradores"><b>Espacio para marcas colaboradoras</b>Tu marca puede aparecer aquí <small>Este espacio está reservado para futuras campañas y acuerdos publicitarios.</small></div>
+
+    <section id="nosotros">
+      <div class="container about-grid">
+        <div class="reveal"><div class="eyebrow">Quiénes somos</div><div class="manifesto">No buscamos solo espectadores. <span class="accent">Impulsamos creadores</span> con identidad, propósito y ambición.</div></div>
+        <div class="about-text reveal"><div class="section-head"><h2>El talento merece una plataforma.</h2><p>COLINDRES MEDIA GROUP es una agencia independiente en desarrollo, enfocada en acompañar a streamers y creadores digitales de Latinoamérica y España.</p></div><p>Creemos en el crecimiento sostenible: construir una identidad, conectar con la audiencia y detectar oportunidades reales. Trabajamos con transparencia, objetivos claros y respeto por la comunidad de cada creador.</p><div class="pill-row"><span class="pill">Representación independiente</span><span class="pill">Desarrollo de marca</span><span class="pill">Crecimiento digital</span></div></div>
+      </div>
+    </section>
+
+    <section id="servicios">
+      <div class="container">
+        <div class="section-head reveal"><div class="eyebrow">Qué hacemos</div><h2>Una visión. <span class="accent">Cuatro áreas.</span></h2><p>Apoyo práctico para que los creadores puedan centrarse en crear y conectar con su audiencia.</p></div>
+        <div class="cards">
+          <article class="card reveal"><div class="card-icon">✦</div><h3>Talent Management</h3><p>Orientación, planificación y acompañamiento para desarrollar la carrera de cada creador.</p></article>
+          <article class="card reveal"><div class="card-icon">↗</div><h3>Creator Growth</h3><p>Estrategia de contenido, objetivos de crecimiento y optimización de presencia digital.</p></article>
+          <article class="card reveal"><div class="card-icon">◎</div><h3>Brand & Marketing</h3><p>Identidad, promoción, campañas y comunicación coherente en distintas plataformas.</p></article>
+          <article class="card reveal"><div class="card-icon">◇</div><h3>Partnerships</h3><p>Detección y gestión de oportunidades de colaboración con marcas y otros creadores.</p></article>
+          <article class="card reveal"><div class="card-icon">▣</div><h3>Content Strategy</h3><p>Ideas, formatos y organización para crear contenido reconocible y constante.</p></article>
+          <article class="card reveal"><div class="card-icon">⌁</div><h3>Live Support</h3><p>Apoyo estratégico para directos, comunidad y presencia como streamer.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><div class="ad-slot"><a class="ad-cta" href="publicidad.html">Colabora con COLINDRES MEDIA GROUP ↗</a><a class="ad-cta secondary" href="publicidad.html#solicitud">Espacio publicitario / partner destacado ↗</a><small>Las colaboraciones comerciales se publicarán de forma identificable y transparente.</small></div></div>
+
+    <section class="about" id="talentos">
+      <div class="container about-grid">
+        <div class="reveal"><div class="eyebrow">COLINDRES MEDIA GROUP community</div><div class="section-head"><h2>El próximo nombre que todos conocerán <span class="accent">puede ser el tuyo.</span></h2><p>Estamos preparando nuestra primera generación de creadores.</p></div><a class="btn btn-primary" href="#unete">Presenta tu perfil ↗</a></div>
+        <div class="about-text reveal"><div class="card" style="min-height:0"><div class="eyebrow">Convocatoria abierta</div><h3 style="font-size:25px;margin:16px 0 8px">Buscamos talento auténtico.</h3><p>Streamers, gamers, creadores IRL, entretenimiento, lifestyle y nuevas voces digitales. Valoramos la constancia, la creatividad y las ganas de aprender; no necesitas tener una audiencia enorme para presentarte.</p><div class="pill-row"><span class="pill">Gaming</span><span class="pill">IRL</span><span class="pill">Entretenimiento</span><span class="pill">Lifestyle</span><span class="pill">Variety</span></div></div></div>
+      </div>
+    </section>
+
+
+    <section id="incentivos">
+      <div class="container">
+        <div class="section-head reveal"><div class="eyebrow">Programa inicial de incentivos</div><h2>Crecer juntos. <span class="accent">Reconocer el esfuerzo.</span></h2><p>Un punto de partida para creadores que construyen su comunidad con constancia. Estas son las cantidades iniciales propuestas por COLINDRES MEDIA GROUP.</p></div>
+        <div class="premium-grid">
+          <article class="premium-card reveal"><div class="eyebrow">Nivel comunidad</div><h3>Desde 500 seguidores</h3><div class="money">3 € <small>/ semana</small></div><p>Incentivo semanal inicial para creadores que alcancen y mantengan este nivel y cumplan las condiciones del programa.</p></article>
+          <article class="premium-card reveal"><div class="eyebrow">Nivel crecimiento</div><h3>Desde 1.000 seguidores</h3><div class="money">5 € <small>/ semana</small></div><p>Un siguiente escalón para reconocer el crecimiento de tu comunidad y tu compromiso con el contenido.</p></article>
+          <article class="premium-card reveal"><div class="eyebrow">Visión a futuro</div><h3>Esto es solo el comienzo</h3><div class="money">∞</div><p>Queremos desarrollar nuevas oportunidades, campañas y colaboraciones a medida que la agencia crezca.</p></article>
+        </div>
+        <div class="notice reveal"><strong>Transparencia:</strong> estas cantidades representan el programa inicial anunciado por la agencia, no una promesa de ingresos automáticos. La elegibilidad, la verificación de seguidores, la actividad mínima, las fechas y la forma de pago deberán quedar confirmadas por escrito antes de aceptar la incorporación. No pagues por registrarte ni compartas contraseñas.</div>
+      </div>
+    </section>
+
+    <section class="about" id="guia">
+      <div class="container">
+        <div class="section-head reveal"><div class="eyebrow">Creator playbook</div><h2>Una rutina que te ayuda a <span class="accent">crecer cada día.</span></h2><p>No existe una fórmula que garantice seguidores. Sí puedes mejorar tus posibilidades con constancia, contenido útil y conversación real.</p></div>
+        <div class="steps">
+          <article class="step reveal"><h3>Define tu identidad</h3><p>Elige un tema principal, una imagen reconocible y una descripción clara. Que la gente entienda en segundos por qué seguirte.</p></article>
+          <article class="step reveal"><h3>Publica con intención</h3><p>Prepara clips cortos con un inicio atractivo, buen audio, subtítulos y una idea por vídeo. Prioriza calidad sobre cantidad.</p></article>
+          <article class="step reveal"><h3>Conecta en directo</h3><p>Saluda por su nombre, lee el chat, plantea dinámicas y crea momentos que merezcan convertirse en clips.</p></article>
+          <article class="step reveal"><h3>Revisa y mejora</h3><p>Analiza retención, comentarios y nuevos seguidores. Repite los formatos que funcionan y prueba una mejora cada semana.</p></article>
+        </div>
+        <div class="cards" style="margin-top:18px">
+          <article class="card reveal"><div class="card-icon">☀</div><h3>Antes del directo</h3><p>Anuncia horario, prepara título y miniatura, comprueba conexión, cámara, micrófono y una lista de temas o retos.</p></article>
+          <article class="card reveal"><div class="card-icon">●</div><h3>Durante el directo</h3><p>Da la bienvenida, explica qué está pasando, invita a participar sin presionar y mantén un ambiente respetuoso.</p></article>
+          <article class="card reveal"><div class="card-icon">↗</div><h3>Después del directo</h3><p>Recorta 2–3 momentos destacados, publícalos adaptados a cada red y agradece a quienes participaron.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="promociona">
+      <div class="container">
+        <div class="share-panel reveal">
+          <div><div class="eyebrow">Comparte la oportunidad</div><h2 style="margin:9px 0 0;font-size:clamp(25px,4vw,36px)">¿Quieres invitar creadores a COLINDRES MEDIA GROUP?</h2><p>Genera una presentación lista para compartir en WhatsApp, Instagram, TikTok o donde tengas tu comunidad.</p></div>
+          <div class="share-actions"><button class="btn btn-primary" type="button" id="openShare">Crear anuncio ↗</button><a class="btn btn-secondary" href="#unete">Quiero unirme</a></div>
+        </div>
+        <div class="president reveal"><div class="president-mark">N</div><div><small>PRESIDENTE · COLINDRES MEDIA GROUP</small><strong>Angel Miguel Colindres Lira</strong><span style="display:block;color:var(--muted);font-size:12px">Dirección y visión estratégica</span></div></div>
+      </div>
+    </section>
+
+    <section class="join" id="unete">
+      <div class="container join-grid">
+        <div class="join-copy reveal"><div class="eyebrow">Únete al movimiento</div><h2>Tu siguiente capítulo <span class="accent">empieza aquí.</span></h2><p>Cuéntanos quién eres, qué contenido haces y qué quieres conseguir. Revisaremos tu propuesta y nos pondremos en contacto contigo.</p><ul class="join-points"><li>Presentación gratuita y sin compromiso.</li><li>Todo tipo de creadores y plataformas.</li><li>Condiciones claras antes de cualquier acuerdo.</li></ul></div>
+        <form id="creatorForm" class="reveal">
+          <div class="form-grid">
+            <div class="field"><label for="name">NOMBRE O ALIAS *</label><input id="name" name="name" required placeholder="Tu nombre / nombre de creador"></div>
+            <div class="field"><label for="email">CORREO ELECTRÓNICO *</label><input id="email" name="email" type="email" required placeholder="tu@email.com"></div>
+            <div class="field"><label for="country">PAÍS *</label><input id="country" name="country" required placeholder="Ej. España"></div>
+            <div class="field"><label for="platform">PLATAFORMA PRINCIPAL *</label><select id="platform" name="platform" required><option value="">Selecciona</option><option>TikTok</option><option>Kick</option><option>Twitch</option><option>YouTube</option><option>GOSH</option><option>Varias plataformas</option><option>Otra</option></select></div>
+            <div class="field full"><label for="link">ENLACE A TU PERFIL</label><input id="link" name="link" type="url" placeholder="https://..."></div>
+            <div class="field full"><label for="message">CUÉNTANOS SOBRE TI *</label><textarea id="message" name="message" required placeholder="Qué contenido haces, cuánto tiempo llevas y qué objetivos tienes..."></textarea></div>
+          </div>
+          <p class="form-foot">Al enviar, verás la confirmación y se abrirá tu aplicación de correo con la solicitud preparada para colindresmediagrouptalent@gmail.com. Debes pulsar Enviar en tu correo para que llegue al equipo. No se almacena información en esta web.</p>
+          <button class="btn btn-primary form-submit" type="submit">Enviar presentación ↗</button>
+          <div class="form-message" id="formMessage" role="status"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="container">
+        <div class="contact-box reveal"><div><div class="eyebrow">Hablemos</div><h2>Las buenas conexiones empiezan aquí.</h2><p>Propuestas, colaboraciones y consultas profesionales.</p></div><div class="contact-actions"><a class="btn btn-primary" href="mailto:colindresmediagrouptalent@gmail.com">Enviar un correo ↗</a><a class="btn btn-secondary" href="https://wa.me/34632842369" target="_blank" rel="noopener">WhatsApp ↗</a></div></div>
+      </div>
+    </section>
+  </main>
+
+
+  <div class="modal" id="shareModal" role="dialog" aria-modal="true" aria-labelledby="shareTitle">
+    <div class="modal-card">
+      <div class="eyebrow">Kit de invitación</div><h3 id="shareTitle">Tu anuncio de COLINDRES MEDIA GROUP</h3>
+      <p style="color:var(--muted);font-size:12px">Puedes editar el texto antes de compartirlo. Añade el enlace público de tu web cuando esté publicada.</p>
+      <textarea id="shareText" class="share-preview" rows="9">🚀 ¿Eres streamer o creador de contenido?
+
+En COLINDRES MEDIA GROUP queremos impulsar tu talento con orientación, estrategia de contenido y desarrollo de comunidad.
+
+✦ Gaming · Directos · Entretenimiento · Lifestyle
+✦ Programa inicial de incentivos sujeto a condiciones y verificación.
+✦ Presenta tu perfil y conoce la propuesta.
+
+COLINDRES MEDIA GROUP — Ideas que conectan. Talento que crece.
+¡Tu siguiente capítulo empieza aquí!</textarea>
+      <div class="share-actions"><button class="btn btn-primary" id="shareNative" type="button">Compartir ↗</button><button class="btn btn-secondary" id="copyShare" type="button">Copiar texto</button><button class="btn btn-secondary" id="closeShare" type="button">Cerrar</button></div>
+      <p id="shareStatus" class="form-message" role="status"></p>
+    </div>
+  </div>
+
+  <button class="help-fab" id="helpToggle" type="button" aria-expanded="false">✦ Ayuda COLINDRES MEDIA GROUP</button>
+  <aside class="help-box" id="helpBox" aria-label="Asistente de ayuda COLINDRES MEDIA GROUP">
+    <div class="help-head"><div><strong>Asistente COLINDRES MEDIA GROUP</strong><small>Respuestas rápidas sobre la agencia</small></div><button class="help-close" id="helpClose" aria-label="Cerrar ayuda">×</button></div>
+    <div class="help-log" id="helpLog" aria-live="polite"><div class="bubble bot">¡Hola! Soy el asistente informativo de COLINDRES MEDIA GROUP. Pregúntame sobre registro, incentivos, crecimiento o publicidad. No solicito contraseñas ni datos bancarios.</div></div>
+    <div class="faq-links"><button data-q="¿Cómo me registro?">Registro</button><button data-q="¿Cómo funcionan los incentivos?">Incentivos</button><button data-q="¿Cómo puedo crecer?">Crecer</button><button data-q="¿Cómo comparto publicidad?">Publicidad</button></div>
+    <form class="help-form" id="helpForm"><input id="helpInput" aria-label="Escribe tu pregunta" placeholder="Escribe tu pregunta..." required><button type="submit">Enviar</button></form>
+  </aside>
+
+  <footer><div class="container"><div class="footer-row"><a class="brand" href="#inicio"><span class="brand-mark">C</span><span class="brand-name">COLINDRES <span>MEDIA GROUP</span></span></a><div class="footer-links"><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#unete">Únete</a><a href="mailto:colindresmediagrouptalent@gmail.com">Email</a></div><span>© <span id="year"></span> COLINDRES MEDIA GROUP</span></div><div class="legal">Presidente: Angel Miguel Colindres Lira. COLINDRES MEDIA GROUP se presenta como proyecto/marca independiente de gestión y desarrollo de creadores. No afirma estar afiliada, patrocinada ni autorizada oficialmente por TikTok, Kick, YouTube, Twitch o GOSH. Los nombres de plataformas pertenecen a sus respectivos titulares. Los espacios publicitarios mostrados son marcadores para futuras colaboraciones; no son anuncios activos ni generan ingresos por sí mismos.</div></div></footer>
+
+  <script>
+    const menu=document.getElementById('menu'),nav=document.getElementById('navlinks');
+    menu.addEventListener('click',()=>nav.classList.toggle('open'));
+    nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+    const creatorForm=document.getElementById('creatorForm');
+    creatorForm.addEventListener('submit',function(e){
+      e.preventDefault();
+      if(!this.reportValidity()) return;
+      const d=new FormData(this);
+      const subject=encodeURIComponent('Nueva solicitud de talento — '+d.get('name'));
+      const body=encodeURIComponent(
+        'NUEVA PRESENTACIÓN DE CREADOR\n\n'+
+        'Nombre/alias: '+d.get('name')+'\n'+
+        'Correo: '+d.get('email')+'\n'+
+        'País: '+d.get('country')+'\n'+
+        'Plataforma: '+d.get('platform')+'\n'+
+        'Perfil: '+(d.get('link')||'No indicado')+'\n\n'+
+        'Sobre el creador:\n'+d.get('message')
+      );
+      const message=document.getElementById('formMessage');
+      message.style.display='block';
+      message.textContent='¡Gracias por presentar tu perfil! Nuestro equipo de trabajo se pondrá en contacto contigo. Se abrirá tu aplicación de correo para que envíes la solicitud a COLINDRES MEDIA GROUP.';
+      window.location.href='mailto:colindresmediagrouptalent@gmail.com?subject='+subject+'&body='+body;
+    });
+
+    const shareModal=document.getElementById('shareModal');
+    const shareText=document.getElementById('shareText');
+    document.getElementById('openShare').addEventListener('click',()=>shareModal.classList.add('open'));
+    document.getElementById('closeShare').addEventListener('click',()=>shareModal.classList.remove('open'));
+    shareModal.addEventListener('click',e=>{if(e.target===shareModal)shareModal.classList.remove('open')});
+    document.getElementById('copyShare').addEventListener('click',async()=>{
+      try{await navigator.clipboard.writeText(shareText.value);document.getElementById('shareStatus').textContent='Texto copiado. Ya puedes pegarlo donde quieras.';}
+      catch(e){shareText.select();document.execCommand('copy');document.getElementById('shareStatus').textContent='Texto seleccionado/copiad​o. Si hace falta, cópialo manualmente.';}
+      document.getElementById('shareStatus').style.display='block';
+    });
+    document.getElementById('shareNative').addEventListener('click',async()=>{
+      if(navigator.share){try{await navigator.share({title:'COLINDRES MEDIA GROUP',text:shareText.value});}catch(e){}}
+      else{document.getElementById('copyShare').click();}
+    });
+
+    const helpBox=document.getElementById('helpBox'),helpToggle=document.getElementById('helpToggle'),helpLog=document.getElementById('helpLog');
+    function toggleHelp(open){helpBox.classList.toggle('open',open);helpToggle.setAttribute('aria-expanded',String(open));}
+    helpToggle.addEventListener('click',()=>toggleHelp(!helpBox.classList.contains('open')));
+    document.getElementById('helpClose').addEventListener('click',()=>toggleHelp(false));
+    function addBubble(text,who){const el=document.createElement('div');el.className='bubble '+who;el.textContent=text;helpLog.appendChild(el);helpLog.scrollTop=helpLog.scrollHeight;}
+    function answerNexora(q){
+      const s=q.toLowerCase();
+      if(/registr|unir|entrar|apuntar|formulario/.test(s)) return 'Para presentar tu perfil, completa el formulario de “Únete a COLINDRES MEDIA GROUP” con tu alias, correo, país, plataforma, enlace y una breve presentación. Al enviarlo se abrirá tu correo para remitir la solicitud. Nuestro equipo revisará la información y se pondrá en contacto contigo. No envíes contraseñas.';
+      if(/3 euro|5 euro|incentiv|pago|dinero|500|1000|seguidor/.test(s)) return 'El programa inicial publicado indica 3 € por semana desde 500 seguidores y 5 € por semana desde 1.000 seguidores. Son importes iniciales sujetos a verificación y a las condiciones escritas del programa; no son ingresos automáticos ni garantizados. Pregunta al equipo por los criterios, actividad mínima y fechas antes de aceptar.';
+      if(/crec|subir|viral|audiencia|contenido|diario/.test(s)) return 'Prueba esta rutina: 1) define un tema y horario; 2) anuncia el directo; 3) prepara audio, título y dinámica; 4) conversa con el chat; 5) guarda momentos destacados; 6) publica clips con subtítulos; 7) revisa retención y comentarios. Sé constante, auténtico y evita comprar seguidores.';
+      if(/public|anuncio|compart|promocion|invitar/.test(s)) return 'En la sección “Comparte la oportunidad”, pulsa “Crear anuncio”. Podrás editar el texto, copiarlo o usar la opción compartir de tu móvil/navegador. Añade el enlace público de COLINDRES MEDIA GROUP cuando la web esté publicada.';
+      if(/servicio|hace|agencia|colindresmediagroup/.test(s)) return 'COLINDRES MEDIA GROUP es una agencia independiente en desarrollo para acompañar a streamers y creadores: estrategia de contenido, identidad de marca, planificación, apoyo en directos y búsqueda de colaboraciones. Las condiciones concretas se explican antes de cualquier acuerdo.';
+      if(/presidente|angel|director/.test(s)) return 'El presidente de COLINDRES MEDIA GROUP es Angel Miguel Colindres Lira.';
+      if(/contact|correo|email|whatsapp/.test(s)) return 'Puedes escribir a colindresmediagrouptalent@gmail.com o usar el formulario de contacto de la web. El teléfono de WhatsApp que aparece en la página es público; confirma que deseas mantenerlo visible antes de publicar.';
+      if(/contrase|clave|banco|tarjeta|dni|documento/.test(s)) return 'Por seguridad, no compartas contraseñas, códigos de verificación, datos bancarios ni documentos sensibles por este chat. Para dudas de privacidad o condiciones, contacta directamente con el equipo.';
+      return 'Puedo orientarte sobre registro, incentivos, crecimiento, servicios y cómo compartir la presentación de COLINDRES MEDIA GROUP. ¿Qué parte quieres conocer mejor? Para una consulta personal, escribe a colindresmediagrouptalent@gmail.com.';
+    }
+    function askHelp(q){if(!q.trim())return;addBubble(q,'user');setTimeout(()=>addBubble(answerNexora(q),'bot'),180);}
+    document.getElementById('helpForm').addEventListener('submit',e=>{e.preventDefault();const input=document.getElementById('helpInput');askHelp(input.value);input.value='';});
+    document.querySelectorAll('.faq-links button').forEach(b=>b.addEventListener('click',()=>askHelp(b.dataset.q)));
+
+  </script>
+</body>
+</html>
